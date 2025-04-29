@@ -1,0 +1,117 @@
+.footer {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.footer .left h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer .right {
+  text-align: right;
+}
+
+.footer .right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.footer .right ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer .right ul li:hover {
+  color: #00bcd4;
+}
+
+.footer .right h6 {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Responsive Footer */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .right {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .footer .right ul li {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .footer .left h5 {
+    font-size: 14px; /* Smaller font size for header */
+  }
+
+  .footer .right h6 {
+    font-size: 12px; /* Smaller footer text size */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 15px; /* Reduce padding on very small screens */
+  }
+
+  .footer .right ul li {
+    margin: 8px 0; /* Slightly reduce margin for better spacing */
+    font-size: 14px; /* Slightly smaller font size for mobile */
+  }
+
+  .footer .left h5 {
+    font-size: 14px; /* Adjust header size for small screens */
+  }
+
+  .footer .right h6 {
+    font-size: 12px; /* Reduce footer text size on small screens */
+  }
+
+  .footer .left {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 10px; /* Reduce padding for mobile */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .left h5 {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .footer .right ul li {
+    font-size: 12px; /* Make text smaller for mobile devices */
+    margin: 6px 0; /* Less margin to fit content */
+  }
+
+  .footer .right h6 {
+    font-size: 10px; /* Make footer text very small for mobile */
+  }
+}
