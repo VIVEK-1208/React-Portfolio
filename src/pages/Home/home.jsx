@@ -20,9 +20,15 @@ const Home = () => {
 
       if (dynamicRoleRef.current) {
         if (isDeleting) {
-          dynamicRoleRef.current.textContent = fullRole.substring(0, charIndex--);
+          dynamicRoleRef.current.textContent = fullRole.substring(
+            0,
+            charIndex--
+          );
         } else {
-          dynamicRoleRef.current.textContent = fullRole.substring(0, charIndex++);
+          dynamicRoleRef.current.textContent = fullRole.substring(
+            0,
+            charIndex++
+          );
         }
 
         if (!isDeleting && charIndex === fullRole.length) {
@@ -32,6 +38,7 @@ const Home = () => {
           currentRole = (currentRole + 1) % roles.length;
         }
       }
+
       setTimeout(typeEffect, isDeleting ? 80 : 150);
     }
 
@@ -39,32 +46,39 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home-container">
-      <div className="home-content">
-        <div className="left">
-          <h1>VIVEK KUMAR</h1>
-          <h1>BHARTI</h1>
-          <p>
-            <span className="static-text">I'm a </span>
-            <span className="dynamic-role" ref={dynamicRoleRef}></span>
-          </p>
+    <>
+      <div className="home-container">
+        <div className="home-content">
+          <div className="left">
+            <h1>VIVEK KUMAR BHARTI</h1>
+            <p>
+              <span className="static-text">I'm a </span>
+              <span className="dynamic-role" ref={dynamicRoleRef}></span>
+            </p>
+          </div>
+
+          <div className="right">
+            <div className="hexagon-wrapper">
+              <div className="hexagon-bg"></div>
+              <img
+                src="/images/vivek.png"
+                alt="Profile"
+                className="profile-img"
+              />
+            </div>
+          </div>
         </div>
 
-        <div className="right">
-          <div className="hexagon-bg"></div>
-          <img src="/images/vivek.png" alt="Profile" className="profile-img" />
+        <div className="marquee">
+          <div className="marquee-content">
+            <span className="tag">FAST LEARNER</span>
+            <span className="tag">TEAM WORK</span>
+            <span className="tag">EFFECTIVE-COMMUNICATION</span>
+            <span className="tag">PROBLEM-SOLVING</span>
+          </div>
         </div>
       </div>
-
-      <div className="marquee">
-        <div className="marquee-content">
-          <span className="tag">FAST LEARNER</span>
-          <span className="tag">TEAM WORK</span>
-          <span className="tag">EFFECTIVE COMMUNICATION</span>
-          <span className="tag">PROBLEM-SOLVING</span>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

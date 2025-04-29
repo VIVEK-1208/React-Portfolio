@@ -10,6 +10,7 @@
 html, body, #root {
   height: 100%;
   background-color: rgb(104, 85, 81);
+  overflow-x: hidden;
 }
 
 #page-container {
