@@ -3,7 +3,8 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/home';
 import About from './pages/About-me/about-me';
 import Skills from "./pages/Skills/skills";
-
+import Project from "./pages/Project/project";
+import Contact from "./pages/Contact/contact";
 import Footer from './components/Footer/footer';
 import './index.css';
 // later you can add more pages: About, Skills, etc.
@@ -18,7 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about-me" element={<About />} />
             <Route path="/skills" element={<Skills />} />
-            {/* You can add About, Skills, Projects, Contact pages here later */}
+            <Route path="/projects" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer />
