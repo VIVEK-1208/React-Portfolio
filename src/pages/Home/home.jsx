@@ -50,7 +50,7 @@ const Home = () => {
       <div className="home-container">
         <div className="home-content">
           <div className="left">
-            <h1>VIVEK KUMAR BHARTI</h1>
+            <h1>VIVEK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KUMAR BHARTI</h1>
             <p>
               <span className="static-text">I'm a </span>
               <span className="dynamic-role" ref={dynamicRoleRef}></span>

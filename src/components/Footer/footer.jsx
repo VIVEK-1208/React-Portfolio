@@ -4,7 +4,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} VIVEK BHARTI. All rights reserved.</p>
+      <p>© &nbsp; {new Date().getFullYear()} &nbsp; VIVEK BHARTI. &nbsp; All &nbsp; rights &nbsp; reserved.</p>
     </footer>
   );
 };

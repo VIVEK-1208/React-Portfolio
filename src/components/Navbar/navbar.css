@@ -1,21 +1,26 @@
 /* Navbar main styles */
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Monoton&family=Mynerve&family=Passero+One&family=Silkscreen:wght@400;700&display=swap');
 .navbar {
   position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #494040;
+  background: rgba(195, 107, 200, 0.2); /* translucent violet */
   padding: 20px 20px;
-  border: 2px solid orange;
+  border: 1.5px solid rgba(36, 36, 36, 0.3);
   border-radius: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 60%;
   max-width: 1500px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.2);
   z-index: 999;
-  color: azure;
+  font-family: "Passero One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   transition: all 0.5s ease;
 }
 
@@ -24,8 +29,9 @@
 }
 
 .navbar-left h1 {
+  color: rgb(72, 6, 133);
   margin: 0;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .navbar-brand {

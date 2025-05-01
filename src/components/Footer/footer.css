@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 .footer {
   width: 100%;
   background-color: #1a1a1a;
@@ -8,6 +9,13 @@
   padding: 20px 50px;
   flex-wrap: wrap;
   box-sizing: border-box;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
 }
 
 .footer .left h5 {

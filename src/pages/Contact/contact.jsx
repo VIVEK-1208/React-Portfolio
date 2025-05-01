@@ -12,7 +12,7 @@ import {
 const contact = () => {
   return (
     <>
-      <section className="contact-section">
+      <section className="contact-section ">
       <h1>Contact Me</h1>
       <div className="contact-box">
         <div className="form-side">
@@ -36,9 +36,9 @@ const contact = () => {
             <p><FaPhone /> +91 6206754508</p>
             <p><FaMapMarkerAlt /> Jamshedpur, Jharkhand</p>
             <div className="socials">
-              <a href="#"><div className="circle"><FaLinkedin /></div></a>
-              <a href="#"><div className="circle"><FaGithub /></div></a>
-              <a href="#"><div className="circle"><FaInstagram /></div></a>
+              <a href="https://www.linkedin.com/in/vivek-bharti-250aa4253"><div className="circle"><FaLinkedin /></div></a>
+              <a href="https://github.com/VIVEK-1208"><div className="circle"><FaGithub /></div></a>
+              <a href="https://www.instagram.com/eagl_vivek?igsh=ejYweW90MnlrZmJk&utm_source=qr"><div className="circle"><FaInstagram /></div></a>
             </div>
           </div>
         </div>

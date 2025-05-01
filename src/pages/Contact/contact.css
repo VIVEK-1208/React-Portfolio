@@ -1,190 +1,219 @@
-.contact-section {
-    padding: 230px 20px 80px;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    min-height: calc(100vh - 60px);
-    box-sizing: border-box;
-    text-align: left;
-  }
-  
-  .contact-section h1 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
-  }
-  
-  .contact-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 1100px;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(12px);
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  .form-side, .info-side {
-    flex: 1 1 450px;
-    max-width: 500px;
-  }
-  
-  .form-side h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .form-side p {
-    margin-bottom: 20px;
-    color: #ccc;
-  }
-  
-  .form-side form input,
-  .form-side form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 14px;
-    resize: none;
-  }
-  
-  .form-side form textarea {
-    height: 150px;
-  }
-  
-  .form-side form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #f97316;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .form-side form button:hover {
-    background-color: #ea580c;
-  }
-  
-  .info-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 45px;
-  }
-  
-  .info-side img {
-    width: 120px;
-    margin-bottom: 25px;
-  }
-  
-  .info-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .info-details p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
-    color: #ddd;
-    font-size: 15px;
-    text-align: left;
-  }
-  
-  .socials {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .circle {
-    width: 44px;
-    height: 44px;
-    background-color: orange;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-    transition: background 0.3s;
-  }
-  
-  .circle:hover {
-    background-color: #fb923c;
-  }
-  
-  /* Tablets */
-  @media (max-width: 992px) {
-    .contact-box {
-      padding: 30px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .form-side, .info-side {
-      max-width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&family=Monoton&family=Mynerve&family=Passero+One&family=Silkscreen:wght@400;700&display=swap");
 
-      flex: 1 1 100%;
-    }
-  
-    .info-details p {
-      justify-content: flex-start;
-    }
-  
-    .info-side {
-      text-align: left;
-      padding-top: 20px;
-    }
+.contact-section {
+  padding: 190px 20px 80px;
+  background: inherit;
+  font-family: "Poppins", sans-serif;
+  min-height: calc(100vh - 66px);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: "Train One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #f97316;
+}
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: repeating-linear-gradient(
+      315deg,
+      #00ffff2e 92%,
+      #073aff00 100%
+    ),
+    repeating-radial-gradient(
+      75% 75% at 238% 218%,
+      #00ffff12 30%,
+      #073aff14 39%
+    ),
+    radial-gradient(99% 99% at 109% 2%, rgb(120, 201, 140) 0%, #073aff00 100%),
+    radial-gradient(99% 99% at 21% 78%, rgb(107, 185, 181) 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, rgb(87, 62, 248) 0%, #073affff 100%);
+}
+
+.form-side,
+.info-side {
+  flex: 1 1 450px;
+  max-width: 500px;
+  font-family: "Passero One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-side h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.form-side p {
+  margin-bottom: 20px;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.form-side form input,
+.form-side form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(10, 10, 10, 0.1);
+  color: white;
+  font-size: 14px;
+  resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #100816;
+}
+
+.form-side form textarea {
+  height: 150px;
+}
+
+.form-side form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0d5970;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-side form button:hover {
+  background-color: #39c6f1;
+}
+
+.info-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 45px;
+}
+
+.info-side img {
+  width: 120px;
+  margin-bottom: 25px;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.info-details p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  color: #ddd;
+  font-size: 18px;
+  text-align: left;
+}
+
+.socials {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.circle {
+  width: 44px;
+  height: 44px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.circle:hover {
+  background-color: #f38022;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .contact-box {
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
-  /* Mobiles */
-  @media (max-width: 576px) {
-    .contact-section {
-      padding: 180px 15px 60px;
-    }
-  
-    .contact-section h1 {
-      font-size: 24px;
-    }
-  
-    .form-side h2 {
-      font-size: 20px;
-    }
-  
-    .form-side p, .info-details p {
-      font-size: 14px;
-    }
-  
-    .circle {
-      width: 38px;
-      height: 38px;
-      font-size: 16px;
-    }
-  
-    .info-side img {
-      width: 100px;
-    }
+
+  .form-side,
+  .info-side {
+    max-width: 100%;
+
+    flex: 1 1 100%;
   }
-  
+
+  .info-details p {
+    justify-content: flex-start;
+  }
+
+  .info-side {
+    text-align: left;
+    padding-top: 20px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 110px 15px 60px;
+  }
+
+  .contact-section h1 {
+    font-size: 24px;
+  }
+
+  .form-side h2 {
+    font-size: 20px;
+  }
+
+  .form-side p,
+  .info-details p {
+    font-size: 14px;
+  }
+
+  .circle {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .info-side img {
+    width: 100px;
+  }
+}
